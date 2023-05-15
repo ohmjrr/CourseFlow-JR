@@ -1,122 +1,168 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import { Flex, Spacer,Text } from '@chakra-ui/react'
+import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+// import { Inter } from 'next/font/google'
+// import { Flex, Spacer,Text } from '@chakra-ui/react'
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+    <Navbar/>
+    <main className="flex flex-col">
+
+
+
+
+      <section className="bg-[#E5ECF8]">
+        <div className=" w-[1440px] mx-auto">
+          <div className="flex  w-[1120px] h-[700px] mx-auto">
+            {/* section1 */}
+            <div className=" flex justify-between  mt-[165px]">
+              <div className="w-[643px]">
+                <h1 className="text-black text-[66px] font-[500]">
+                  Best Virtual <br />
+                  Classroom Software
+                </h1>
+                <p className="mt-[24px] text-[#646D89] text-[20px]">
+                  Welcome to Schooler! The one-stop online class management
+                  system that caters to all your educational needs!
+                </p>
+                <button className="font-[700] py-[18px] px-[32px] mt-[60px] bg-[#2F5FAC] text-white rounded-[12px] hover:bg-[#6991d5] transition-all duration-200">
+                  Explore Courses
+                </button>
+              </div>
+
+              <Image
+                src="/hompage/computer.svg"
+                className="rounded-[8px]"
+                width={452}
+                height={448}
+              />
+            </div>
+          </div>
         </div>
-      </div>
-      <Flex w="500px" bg="red">
-        <Text>adasdasdasdasdasdasdaasdasd</Text>
-      </Flex>
-      
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
+      </section>
+
+
+
+
+
+
+      {/* section2 */}
+      <section className="w-[1120px] mx-auto">
+        <div className="flex justify-between mt-[161px] w-full h-[330px] ">
+          <Image
+            src="/hompage/Frame 427320903.svg"
+            className="rounded-[8px]"
+            width={454}
+            height={330}
+          />
+          <div className="flex flex-col w-[547px] h-full justify-between">
+            <h1 className="text-[36px] font-[500]">
+              Learning experience has been enhanced with new technologies
+            </h1>
+
+            <div>
+              <div className="flex mb-[24px]">
+                <Image src="/hompage/icon.svg" width={36} height={36} />
+
+                <div className="ml-[24px]">
+                  <h2 className="text-[24px] font-[500]">Secure & Easy</h2>
+                  <p className="text-[#646D89]">
+                    Duis aute irure dolor in reprehenderit in voluptate velit es
+                    se cillum dolore eu fugiat nulla pariatur. Excepteur sint.
+                  </p>
+                </div>
+              </div>
+              <div className="flex ">
+                <Image src="/hompage/icon (1).svg" width={36} height={36} />
+
+                <div className="ml-[24px]">
+                  <h2 className="text-[24px] font-[500]">Support All Student</h2>
+                  <p className="text-[#646D89]">
+                    Duis aute irure dolor in reprehenderit in voluptate velit es
+                    se cillum dolore eu fugiat nulla pariatur. Excepteur sint.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-between mt-[120px] w-full h-[330px] ">
+          
+          <div className="flex flex-col w-[547px] h-full justify-between">
+            <h1 className="text-[36px] font-[500]">
+            Interaction between the tutor <br/> and the learners 
+            </h1>
+
+            <div>
+              <div className="flex mb-[24px]">
+                <Image src="/hompage/icon (2).svg" width={36} height={36} />
+
+                <div className="ml-[24px]">
+                  <h2 className="text-[24px] font-[500]">Purely Collaborative</h2>
+                  <p className="text-[#646D89]">
+                    Duis aute irure dolor in reprehenderit in voluptate velit es
+                    se cillum dolore eu fugiat nulla pariatur. Excepteur sint.
+                  </p>
+                </div>
+              </div>
+              <div className="flex ">
+                <Image src="/hompage/icon (1).svg" width={36} height={36} />
+
+                <div className="ml-[24px]">
+                  <h2 className="text-[24px] font-[500]">Support All Student</h2>
+                  <p className="text-[#646D89]">
+                    Duis aute irure dolor in reprehenderit in voluptate velit es
+                    se cillum dolore eu fugiat nulla pariatur. Excepteur sint.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <Image
+            src="/hompage/Frame 427320903 (1).svg"
+            className="rounded-[8px]"
+            width={454}
+            height={330}
+          />
+        </div>
+      </section>
+
+      <section className="w-[1120px] mx-auto mt-[275px]">
+        <h1 className="text-center text-[36px] mb-[60px] font-[500]">Our Professional Intructor</h1>
+        <div className="flex flex-row justify-around">
+          
+        <div className="w-[40%] h-[536px] bg-slate-200">
+        <Image src="/1680519471715.jpg" width={500} height={536} />
+        </div>
+        <div className="w-[40%] h-[536px] bg-slate-200">
+        <Image src="/1680519471715.jpg" width={500} height={536} />
+        </div>
+        </div>
+
+      </section>
+
+
+
+
+        <section className=" w-[1120px] mx-auto mt-[216px]">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          src="/hompage/Frame 57044.svg"
+          alt="Background Image"
+          width={1440}
+          height={500}
         />
-      </div>
+      
+        </section>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
     </main>
-  )
+    <Footer/>
+    </>
+    
+  );
 }

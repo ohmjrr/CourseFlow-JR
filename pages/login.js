@@ -1,7 +1,10 @@
 import React from "react";
+import Navbar from "@/components/Navbar";
 
 export default function login() {
   return (
+    <>
+    <Navbar/>
     <section className="max-w-screen-xl h-screen flex flex-col items-center justify-center mx-auto border-2 border-red-950">
       <div className="border-2 border-red-950 flex flex-col  w-[453px] h-[446px]">
         <h1 className=" text-4xl text-blue-800 ">Welcome back!</h1>
@@ -31,5 +34,7 @@ export default function login() {
         </div>
       </div>
     </section>
+    </>
+
   );
 }
