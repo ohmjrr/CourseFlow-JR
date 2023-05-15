@@ -24,7 +24,7 @@ export default function Register() {
       console.log(error);
       return;
     }
-
+    console.log(data);
     // Insert user data into the public schema
     let { data: userData, error: userError } = await supabase
       .from("users")
@@ -34,6 +34,8 @@ export default function Register() {
         education: educational,
         email: email,
         picture: picture,
+        id: data.user.id,
+        created_at: new Date().toISOString()
       })
       .select("user_id");
       
@@ -41,8 +43,7 @@ export default function Register() {
       console.log(userError);
       return;
     }
-  
-    // console.log("User registered successfully.");
+    
   };
   
 
