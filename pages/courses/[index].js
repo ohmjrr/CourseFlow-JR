@@ -1,11 +1,22 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 export default function CourseDetail() {
+   const router = useRouter()
+
+   const handleback = () =>{
+    router.back()
+   }
+   
   return (
-    <div className="max-w-screen-xl flex flex-col items-center">
+    <div className="max-w-screen-xl flex flex-col items-center mx-auto">
+      <div onClick={handleback}>back</div>
       <div className=" flex">
         <div className=" w-[739px] flex flex-col mt-20">
-          <Image src="/1680519471715.jpg" width={739} height={200}  />
+          <div className="w-[739px] h-[460px] relative">
+            <Image src="/1680519471715.jpg" layout="fill"/>
+          </div>
+
           <div className=" flex flex-col">
             <h1>Course Detail</h1>
             <p>
@@ -16,7 +27,7 @@ export default function CourseDetail() {
               ornare fringilla. Vivamus amet risus ullamcorper auctor nibh.
               Maecenas morbi nec vestibulum ac tempus vehicula.
             </p>
-            <p>
+           <p>
               Vel, sit magna nisl cras non cursus. Sed sed sit ullamcorper
               neque. Dictum sapien amet, dictumst maecenas. Mattis nulla tellus
               ut neque euismod cras amet, volutpat purus. Semper purus viverra
