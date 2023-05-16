@@ -9,9 +9,9 @@ export default function CourseDetail() {
    }
    
   return (
-    <div className="max-w-screen-xl flex flex-col items-center mx-auto">
+    <div className="max-w-screen-xl flex flex-col items-center mx-auto border-2 border-black">
       <div onClick={handleback}>back</div>
-      <div className=" flex">
+      <div className="flex">
         <div className=" w-[739px] flex flex-col mt-20">
           <div className="w-[739px] h-[460px] relative">
             <Image src="/1680519471715.jpg" layout="fill"/>
@@ -46,6 +46,18 @@ export default function CourseDetail() {
               molestie. Quis eget vestibulum, faucibus malesuada eu. Et lectus
               molestie egestas faucibus auctor auctor.
             </p>
+          </div>
+        </div>
+        <div className="flex flex-col items-center w-[357px] h-[449px] justify-around border-2 border-black mt-20">
+          <p>Course</p>
+          <div className="w-[309px] h-[86px]">
+            <h1>Service Design Essentials</h1>
+            <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
+            <p>THB 3,559.00</p>
+          </div>
+          <div className="flex flex-col w-[309px] justify-end h-[176px] border-2 border-black">
+            <button className="px-[32px] py-[18px]">Get in Desire Course</button>
+            <button className="px-[32px] py-[18px]">Subscribe This Course</button>
           </div>
         </div>
       </div>
